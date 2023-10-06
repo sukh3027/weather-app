@@ -1,6 +1,6 @@
 //making object of weatherapi
 const weatherApi = {
-    key: '9f23b56e8dcad8299bf4e5a2a3fc932b',
+    key: '703200e3360bceb8583c6491d650430d',
     baseUrl: 'https://api.openweathermap.org/data/2.5/weather'
 }
 
@@ -16,7 +16,6 @@ searchInputBox.addEventListener('keypress', (event) => {
 
 
 //get waether report
-
 function getWeatherReport(city) {
     fetch(`${weatherApi.baseUrl}?q=${city}&appid=${weatherApi.key}&units=metric`)  // fetch method fetching the data from  base url ...metric is used for unit in celcius......here i am appending the base url to get data by city name .  
         .then(weather => {   //weather is from api
